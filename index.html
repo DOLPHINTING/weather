@@ -1,0 +1,37 @@
+<html>
+	<head><meta charset="utf-8">
+	<title>Homework 2</title>
+	<link href="css/bootstrap.css" rel="stylesheet"> 
+	<link href="css/test1.css" rel="stylesheet"> 
+		</head>
+		<body>
+		<div class="container">
+			<div class="aera">
+			<div class="condition"><h3>各地天氣狀況查詢</h3></div>
+                <h4>1.點選地方選項</h4>
+				<div id="method1"></div>
+				<h4>2.下拉式選單</h4>
+				<div id="method2">
+					<select id="citybox1"></select>
+					<select id="citybox2"></select>
+				</div>
+				<div id="method3"></div>
+			</div>
+			<div class="weather_info">
+				<div class="data" id="weather">
+				    <div class="t"><b>Title</b></div>
+					<div id="title">No data.<br></div>
+					<div class="t"><b>Date</b></div>
+					<div id="date">No data.<br></div>
+					<div class="t"><b>Location</b></div>
+					<div id="location">No data.</div>
+					<div class="t"><b>Temp</b></div><div id="temp">No data.</div>
+					<div class="t"><b>Text</b></div><div id="text">No data.</div>
+				</div>
+			</div>
+		</div> 
+		<script src="js/jquery-1.9.1.min.js"></script> 
+		<script src="js/all.js"></script> 
+		<script type="text/javascript">window.onload=function(){menuInit();};</script>
+	</body>
+</html> 

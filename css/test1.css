@@ -1,0 +1,39 @@
+.btn {
+color: #511789;
+text-decoration: none;
+background-image: linear-gradient(to bottom, #FFFFFF, #EBF5FF);
+margin:10px 1px 5px 10px;
+font-size:18px;
+font-family:"SimHei";
+}
+.btn:hover {
+font-weight:bolder;
+text-decoration: none;
+color: #FF3300;
+}
+.data{
+padding: 50px;
+margin-bottom: 20px;
+font-size:22px;
+font-weight: 200;
+line-height: 30px;
+color: #174F89;
+background-color: #CDE5FF;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+font-family: “arial”;
+line-height: 35px;
+}
+.t{
+font-size:28px;
+text-decoration: underline;
+font-weight:bolder;
+width:115px;
+}
+.condition{
+background-color:#FEFFAF;
+padding: 7px;
+width:930px;
+margin:8px -2px ;
+}
