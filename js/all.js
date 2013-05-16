@@ -28,13 +28,13 @@ menuInit=function(){
 	var optionName=[],optionName2=[];
 	for(var count in city)
 		optionName.push("<option>"+city[count]+"</option>");
-	$("#citybox1").append(optionName);
-	$("#citybox2").append("<option>七堵</option>");
+	$("#box1").append(optionName);
+	$("#box2").append("<option>七堵</option>");
 	showData(scityT["基隆"][0].split(" ")[1]);
 	
 };
 
-$("#citybox1").change(
+$("#box1").change(
 	function(){
 		var cityName=$(this).find(":selected").text();
 		var cityName2=[];
@@ -42,8 +42,8 @@ $("#citybox1").change(
 		var count;
 		for(count in scityT[cityName])
 			cityName2.push("<option>"+scityT[cityName][count].split(" ")[0]+"</option>");
-		$("#citybox2").empty();
-		$("#citybox2").append(cityName2);
+		$("#box2").empty();
+		$("#box2").append(cityName2);
 		showData(cityNumber);
 		
 	}
@@ -75,8 +75,8 @@ showData=function(cityNumber)
 
 $("#method1").on("click","div.btn.btn-link",function(a){console.log(a.target.id);showData(a.target.id)});
 
-$("#citybox2").change(function(){
-	var cityName=$("#citybox1").find(":selected").text();
+$("#box2").change(function(){
+	var cityName=$("#box1").find(":selected").text();
 	var cityName2=$(this).find(":selected").text();
 	var cityNumber;
 	for(var count in scityT[cityName])
